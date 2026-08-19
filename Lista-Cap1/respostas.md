@@ -22,3 +22,26 @@ int main() {
     system("PAUSE");
     return 0;
 }
+```
+
+## Questão 05
+
+### Resposta
+
+O código não está adequado ao padrão ANSI C, pois faltam as diretivas `#include <stdio.h>` e `#include <stdlib.h>`, necessárias para as funções `printf()` e `system()`.
+
+Outro ponto é qeue a função principal deve ser declarada como `int main()` e deve possuir `return 0;` para indicar o encerramento correto do programa.
+
+### Código corrigido
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("Linguagem C");
+    system("pause");
+    return 0;
+}
+```
