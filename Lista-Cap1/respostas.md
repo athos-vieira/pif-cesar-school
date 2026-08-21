@@ -170,3 +170,129 @@ O segundo `printf` está incorreto, porque `%c` espera um caractere mas `"\""` �
 printf("%c", '\"');
 ```
 
+## Questão 10
+
+### Resposta
+
+**alternativa correta:** **b) Verdadeiro.**
+
+a linguagem C é case sensitive, ou seja, diferencia letras maiúsculas de minssculas. Por isso, `peso`, `Peso` e `PESO` representam variáveis diferentes na memória.
+
+### Exemplo
+
+```c
+int peso = 70;
+int Peso = 80;
+int PESO = 90;
+```
+
+nesse exemplo o compilador cria três variáveis diferentes.
+```
+
+## Questão 11
+
+### Resposta
+
+| Constante | Classificação (Tipo de Constante) | Tipo Base em C |
+|-----------|------------------------------------|----------------|
+| `'\r'` | Constante de caractere (sequência de escape) | `char` |
+| `2130` | Constante inteira decimal | `int` |
+| `-123` | Constante inteira decimal | `int` |
+| `33.28` | Constante de ponto flutuante | `double` |
+| `0XFA` | Constante inteira hexadecimal | `int` |
+| `0101` | Constante inteira octal | `int` |
+| `2.0e30` | Constante de ponto flutuante (notação científica) | `double` |
+| `'\xDC'` | Constante de caractere (sequência hexadecimal) | `char` |
+| `"\""` | Constante string | `char[]` |
+| `'\\'` | Constante de caractere (barra invertida) | `char` |
+| `'F'` | Constante de caractere | `char` |
+| `0` | Constante inteira decimal | `int` |
+| `'\0'` | Constante de caractere (caractere nulo) | `char` |
+| `"F"` | Constante string | `char[]` |
+| `-4567.89` | Constante de ponto flutuante | `double` |
+
+```
+
+## Questão 12
+
+### Resposta
+
+| Instrução | Status | Justificativa |
+|-----------|--------|---------------|
+| `int a;` | **Correto** | Declara uma variável inteira do tipo `int`. |
+| `float b;` | **Correto** | Declara uma variável de ponto flutuante do tipo `float`. |
+| `double float c;` | **Incorreto** | Não é permitido usar `double` e `float` juntos na mesma declaração. |
+| `unsigned char d;` | **Correto** | Declara uma variável do tipo `char` sem sinal. |
+| `unsigned e;` | **Correto** | `unsigned` equivale a `unsigned int`. |
+| `long float f;` | **Incorreto** | `long float` não existe em C. O correto seria `long double`. |
+| `long g;` | **Correto** | Declara uma variável inteira do tipo `long int`. |
+| `long double h;` | **Correto** | Declara uma variável de ponto flutuante de dupla precisão estendida. |
+```
+## Questão 13
+
+### Resposta
+
+**alternativa correta:** **c)** São arquivos de texto ASCII padrão contendo protótipos de funções, definições de constantes, macros e tipos.
+
+```
+
+## Questão 14
+
+### Resposta
+
+**alternativa correta:** **a)** Instruir o compilador a carregar as definições das funções da biblioteca padrão antes de compilar o código-fonte.
+
+```
+
+## Questão 15
+
+### Resposta
+
+**alternativa correta:** **c)** Uma diretiva especial para o pré-processador C, executada antes da compilação.
+
+```
+## Questão 16
+
+### Resposta
+
+**alternativa correta:** **c)** Pré-processador (fase do compilador que altera o programa-fonte antes da compilação propriamente dita).
+
+```
+
+## Questão 17
+
+### Resposta
+
+**Corretas:** **a), b) e c).**
+
+A alternativa **d)** está incorreta, pois `printf` deve ser chamada com parênteses.
+
+```
+
+## Questão 18
+
+### Código corrigido
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float lapis = 4.88;
+    float borrachas = 234.54;
+    float canetas = 42.04;
+    float cadernos = 8.00;
+    float fitas = 13.05;
+
+    printf("%-12s %12.2f\n", "Lapis", lapis);
+    printf("%-12s %12.2f\n", "Borrachas", borrachas);
+    printf("%-12s %12.2f\n", "Canetas", canetas);
+    printf("%-12s %12.2f\n", "Cadernos", cadernos);
+    printf("%-12s %12.2f\n", "Fitas", fitas);
+
+    system("pause");
+    return 0;
+}
+```
+
