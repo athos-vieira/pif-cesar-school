@@ -265,7 +265,7 @@ nesse exemplo o compilador cria três variáveis diferentes.
 
 **Corretas:** **a), b) e c).**
 
-A alternativa **d)** está incorreta, pois `printf` deve ser chamada com parênteses.
+a alternativa **d)** está incorreta, pois `printf` deve ser chamada com parênteses.
 
 ```
 
