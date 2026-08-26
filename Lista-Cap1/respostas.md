@@ -14,12 +14,12 @@
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
 
     printf("Existem %d semanas no ano.\n", 52);
-    system("PAUSE");
+
     return 0;
 }
 ```
@@ -36,12 +36,12 @@ Outro ponto é qeue a função principal deve ser declarada como `int main()` e 
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main()
 {
     printf("Linguagem C");
-    system("pause");
+
     return 0;
 }
 ```
@@ -68,14 +68,12 @@ int main()
 
 ```c
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
     int a = 1, b = 2, c = 3;
 
     printf("Os números são: %d %d %d\n", a, b, c);
-    system("pause");
     return 0;
 }
 ```
@@ -269,5 +267,49 @@ a alternativa **d)** está incorreta, pois `printf` deve ser chamada com parênt
 
 ```
 
+## Questão 21
+
+### Versão 1 – Um único printf()
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("Treinamento em programação.\nLinguagem C.\n");
+
+    return 0;
+}
+```
+
+### Versão 2 – Dois printf()
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("Treinamento em programação.\n");
+    printf("Linguagem C.\n");
+
+    return 0;
+}
+```
+
+### Versão 3 – Frases emolduradas
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("┌──────────────────────────────┐\n");
+    printf("│ Treinamento em programação. │\n");
+    printf("│ Linguagem C.                │\n");
+    printf("└──────────────────────────────┘\n");
+
+    return 0;
+}
+```
 
 

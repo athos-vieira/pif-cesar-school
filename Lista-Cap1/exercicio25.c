@@ -2,7 +2,7 @@
 
 int main()
 {
-    printf("um\n\tdois\n\t\ttrês\n");
+    printf("CCCCC\nC\nC\nCCCCC\n");
 
     return 0;
 }
