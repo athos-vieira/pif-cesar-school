@@ -201,3 +201,46 @@ Resultado: 0
 
 Explicação: i == 2 é falso, j == 4 é falso e k == 5 também é falso. Como todas as condições são falsas, o resultado é 0.
 ```
+
+# Questão 06 
+
+## a) O operador prefixado (`++n`) incrementa a variável antes de utilizá-la na expressão. Já o operador pós-fixado (`m++`) primeiro utiliza o valor atual da variável e somente depois realiza o incremento.
+
+### Trecho A
+
+```c
+int n = 5;
+int x = ++n;
+printf("Trecho A: n = %d, x = %d\n", n, x);
+```
+
+Saída:
+
+```text
+Trecho A: n = 6, x = 6
+```
+
+
+
+### Trecho B
+
+```c
+int m = 5;
+int y = m++;
+printf("Trecho B: m = %d, y = %d\n", m, y);
+```
+
+Saída:
+
+```text
+Trecho B: m = 6, y = 5
+```
+
+## b) Essa instrução pode gerar resultados diferentes porque a variável `n` é lida e modificada na mesma chamada de `printf()`. A linguagem C não define a ordem de avaliação dos argumentos de uma função.
+
+Assim, o compilador pode avaliar `n`, `n + 1` e `n++` em ordens diferentes, produzindo saídas distintas dependendo do compilador ou da otimização utilizada.
+`.
+
+```
+
+    
