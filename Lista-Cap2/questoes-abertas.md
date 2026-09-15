@@ -135,3 +135,69 @@ a = 19
 
 a = 19, b = 13, c = 7
 ```
+# Questão 05 – 
+
+Considere as seguintes inicializações:
+
+int i = 1, j = 2, k = 3, n = 2;
+float x = 3.3, y = 4.4;
+### a) i < j + 3
+
+Resultado: 1
+
+Explicação: j + 3 = 5 e 1 < 5 é verdadeiro.
+
+### b) 2 * i - 7 <= j - 8
+
+Resultado: 0
+
+Explicação: 2 * 1 - 7 = -5 e 2 - 8 = -6. Como -5 <= -6 é falso, o resultado é 0.
+
+### c) -x + y >= 2.0 * y
+
+Resultado: 0
+
+Explicação: -3.3 + 4.4 = 1.1 e 2.0 * 4.4 = 8.8. Como 1.1 >= 8.8 é falso, o resultado é 0.
+
+### d) x == y
+
+Resultado: 0
+
+Explicação: 3.3 é diferente de 4.4, então a comparação é falsa.
+
+### e) !(n - j)
+
+Resultado: 1
+
+Explicação: n - j = 2 - 2 = 0. O operador ! inverte 0 para verdadeiro (1).
+
+### f) !n - j
+
+Resultado: -2
+
+Explicação: Primeiro !n: como n = 2, !2 = 0. Depois 0 - 2 = -2.
+
+### g) i && j && k
+
+Resultado: 1
+
+Explicação: Todos os valores são diferentes de zero, portanto a expressão é verdadeira.
+
+### h) i || j - 3 && k
+
+Resultado: 1
+
+Explicação: j - 3 = -1 e -1 && 3 é verdadeiro (1). Assim, 1 || 1 resulta em verdadeiro (1).
+
+### i) i < j && 2 >= k
+
+Resultado: 0
+
+Explicação: 1 < 2 é verdadeiro, mas 2 >= 3 é falso. Como uma das condições é falsa, o resultado é 0.
+
+### j) i == 2 || j == 4 || k == 5
+
+Resultado: 0
+
+Explicação: i == 2 é falso, j == 4 é falso e k == 5 também é falso. Como todas as condições são falsas, o resultado é 0.
+```
