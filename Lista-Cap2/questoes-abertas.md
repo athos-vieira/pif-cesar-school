@@ -72,13 +72,13 @@ Valores iniciais:
 
 ```c
 a = 1, b = 2, c = 3, d = 4;
-1. a += b + c;
+## 1. a += b + c;
 a = 1 + (2 + 3)
 a = 6
 
 a = 6
 
-2. b *= c = d + 2;
+## 2. b *= c = d + 2;
 
 Avaliação da direita para a esquerda:
 
@@ -92,14 +92,14 @@ b = 12
 
 b = 12, c = 6
 
-3. d %= a + a + a;
+## 3. d %= a + a + a;
 d = 4 % (6 + 6 + 6)
 d = 4 % 18
 d = 4
 
 d = 4
 
-4. d -= c -= b -= a;
+## 4. d -= c -= b -= a;
 
 Avaliação da direita para a esquerda:
 
@@ -117,7 +117,7 @@ d = 4
 
 b = 6, c = 0, d = 4
 
-5. a += b += c += 7;
+## 5. a += b += c += 7;
 
 Avaliação da direita para a esquerda:
 
